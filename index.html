@@ -26,7 +26,7 @@
     <div class="home-content">
         <h3>Hello, I am</h3>
         <h1>SANDEEP PALAI</h1>
-        <h3>And I'm a <span>Frontend Developer</span></h3>
+        <h3>And I'm a <span class="text second-text"></span></h3>
         <p>I have 7 months of Experience in WIPRO as Desktop Support Engineer. 
             I have completed B.Tech in computer science from Centurion University, Bhubaneswar.
              </p>
@@ -43,6 +43,28 @@
             <img src="./Image/my_img.png" >
         </div>
 </section>
+<script>
+    const text = document.querySelector(".second-text");
+    const textLoad =() => {
+        setTimeout(() => {
+            text.textContent = "Developer";
+        },0);
+        setTimeout(() => {
+            text.textContent = "Blogger";
+        },2000);
+        setTimeout(() => {
+            text.textContent = "3D Artist";
+        },4000); //1s = 1000ms
+        
+        setTimeout(() => {
+            text.textContent = "Youtuber";
+        },6000); //1s = 1000ms
+        
+
+    }
+   textLoad();
+   setInterval(textLoad,8000);
+ </script>
 
 
 </body>
